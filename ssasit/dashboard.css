@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   TOP HEADER
+========================= */
+
+.top-header {
+    width: 100%;
+    height: 70px;
+
+    background: #1554d1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    color: white;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #0d3fa5;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background: #092f7c;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page {
+    display: flex;
+
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 220px;
+
+    background: white;
+
+    min-height: calc(100vh - 70px);
+
+    padding: 25px 15px;
+
+    border-right: 1px solid #e5e5e5;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    margin-bottom: 8px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 16px;
+
+    border-radius: 7px;
+}
+
+.menu span {
+    font-size: 18px;
+}
+
+.menu:hover {
+    background: #edf3ff;
+    color: #1554d1;
+}
+
+.menu.active {
+    background: #e8f0ff;
+    color: #1554d1;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+    flex: 1;
+
+    padding: 35px;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+    margin-bottom: 30px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.welcome p {
+    color: #777;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+
+    padding: 25px;
+
+    min-height: 155px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+}
+
+.card-icon {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 15px;
+
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 30px;
+
+    color: #1554d1;
+}
+
+
+/* =========================
+   RECENT POSTS
+========================= */
+
+.recent-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+}
+
+.recent-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.recent-header h2 {
+    font-size: 21px;
+}
+
+.create-btn {
+    background: #1554d1;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+.create-btn:hover {
+    background: #0d3fa5;
+}
+
+.no-post {
+    background: #f5f7fb;
+
+    padding: 18px;
+
+    border-radius: 7px;
+
+    color: #777;
+}
+
+.post-item {
+    background: #f5f7fb;
+
+    padding: 15px;
+
+    border-radius: 7px;
+
+    color: #555;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        padding: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .top-header {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        padding: 10px;
+    }
+
+    .menu {
+        margin: 0 3px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
