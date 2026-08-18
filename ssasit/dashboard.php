@@ -13,8 +13,6 @@ if (file_exists("db.php")) {
             $row = mysqli_fetch_assoc($result);
             $total_posts = $row['total'];
         }
-
-        /* હાલ login user માટે અલગ count પછી connect કરી શકીએ */
         $my_posts = $total_posts;
     }
 }
