@@ -94,27 +94,15 @@
             </button>
 
         </div>
-
-
-
-        <!-- RIGHT SIDE -->
-
         <div class="preview-box">
 
             <h2>Post Preview</h2>
-
-
             <div class="post-preview">
-
-
-                <!-- YOUR SSASIT TEMPLATE -->
-
                 <img
                     src="ssasit.jpeg" class="template" style="width:100%;">
 
 
                 <!-- SELECTED PHOTOS -->
-
                 <div
                     id="previewPhotos"
                     class="photo-area"
